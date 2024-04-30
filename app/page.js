@@ -36,8 +36,7 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    mapboxgl.accessToken =
-      "pk.eyJ1IjoianN1Y2hlciIsImEiOiJjbHEyeHdkcHYwMHVhMmlwNmNsZmV3eDIwIn0.tQst6lt5NChnRTRk_YbJ7Q";
+    mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
 
     map.current = new mapboxgl.Map({
       container: mapContainer.current,
