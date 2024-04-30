@@ -7,7 +7,7 @@ export async function GET() {
     today.setHours(0, 0, 0, 0);
 
     const tomorrow = new Date();
-    tomorrow.setDate(tomorrow.getDate() + 1);
+    tomorrow.setDate(tomorrow.getDate() + 7);
     tomorrow.setHours(0, 0, 0, 0);
 
 

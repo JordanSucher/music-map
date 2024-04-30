@@ -67,11 +67,11 @@ export default function ConcertPanel({ concerts, selectedConcert, onSelect }) {
           </div>
         ) : (
           <div>
-            <h2 className="font-semibold">Shows in NYC today</h2>
+            <h2 className="font-semibold">Shows in NYC this week</h2>
           <ul>
             {concerts.map(concert => (
               <li key={concert.id} className="p-2 cursor-pointer hover:bg-gray-200 underline" onClick={() => onSelect(concert)}>
-                {concert.venue_name} - {concert.bandShows.flatMap(bandShow => bandShow.band.name).join(", ")}
+                {new Date(concert.date).toLocaleDateString()} - {concert.venue_name} - {concert.bandShows.flatMap(bandShow => bandShow.band.name).join(", ")}
               </li>
             ))}
           </ul>
