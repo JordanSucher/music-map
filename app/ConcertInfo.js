@@ -29,7 +29,7 @@ export default function ConcertPanel({ concerts, selectedConcert, onSelect }) {
   
 
     return (
-    <div className="text-black absolute top-0 left-0 m-4 p-4 bg-white rounded-lg shadow-lg max-w-[400px] max-h-[80%] overflow-y-auto">
+    <div className="text-black absolute top-0 left-0 m-4 p-4 bg-white rounded-lg shadow-lg max-w-[400px] max-h-[50%] overflow-y-auto">
         {selectedConcert ? (
           <div>
             <span className="flex gap-4 items-center">
