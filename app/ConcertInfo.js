@@ -40,7 +40,7 @@ export default function ConcertPanel({ concerts, selectedConcert, onSelect }) {
             <h2 className="mt-2 mb-2 font-semibold">Hover to listen</h2>
             <div className="flex flex-wrap gap-2 mb-2">
               {tracks?.map((track, index) => (
-                <div key={index} className="h-[90px] w-[90px]">
+                <div key={index} className="h-[60px] w-[60px] md:h-[90px] md:w-[90px]">
                   <img
                     src={track.image_url}
                     alt={`Album cover for track ${index + 1}`}
