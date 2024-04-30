@@ -45,7 +45,6 @@ export default function Home() {
       zoom: 16,
       pitch: 60, // starting pitch in degrees
       bearing: -17.6, // starting bearing in degrees,
-      scrollZoom: false,
     });
   }, []);
 

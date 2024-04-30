@@ -34,7 +34,7 @@ export default function ConcertPanel({ concerts, selectedConcert, onSelect }) {
           <div>
             <span className="flex gap-4 items-center">
                 <ArrowLeftIcon className="cursor-pointer h-5 w-5" onClick={() => onSelect(null)}>Back to List</ArrowLeftIcon>
-                <h2>{selectedConcert.venue_name} - {bands?.join(", ")}</h2>
+                <h2>{new Date(selectedConcert.date).toLocaleDateString()} - {selectedConcert.venue_name} - {bands?.join(", ")}</h2>
             </span>
             <a className="mt-5 text-blue-500 hover:text-blue-700 underline underline-offset-2 font-semibold" href={selectedConcert.ticket_url} target="_blank" rel="noreferrer">Tickets</a>
             <h2 className="mt-2 mb-2 font-semibold">Hover to listen</h2>
